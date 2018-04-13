@@ -1,0 +1,43 @@
+<robot
+  name="education_cart">
+  <link
+    name="cart">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="50.0" />
+      <inertia
+        ixx="10.0"
+        ixy="0"
+        ixz="0"
+        iyy="10.0"
+        iyz="0"
+        izz="10.0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cross_education_cart_gt/Education_Cart_Cross_Defeature.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75 0.75 0.75 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cross_education_cart_gt/Education_Cart_Cross_Box.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
